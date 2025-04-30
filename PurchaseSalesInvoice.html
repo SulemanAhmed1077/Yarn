@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purchase / Sales Invoice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="index-page">
+    <header class="dashboard-header">
+      <div class="left-space"></div>
+      <h1>Purchases Sales Invoice</h1>
+      <button id="logoutBtn">Logout</button>
+    </header>
+
+    <main class="form-container">
+      <!-- Purchase Form -->
+      <section class="card">
+        <h2>Purchase</h2>
+        <div class="form-grid">
+          <input type="text" placeholder="Challan No" />
+          <input type="date" placeholder="Date" />
+          <input type="text" placeholder="Vendor" />
+          <input type="text" placeholder="Count" />
+          <input type="number" placeholder="Bags" />
+          <input type="number" placeholder="LBS" />
+          <input type="number" placeholder="Rate" />
+          <input type="number" placeholder="Excluding" />
+          <input type="number" placeholder="Sales Tax" />
+          <input type="number" placeholder="Including" readonly />
+          <input type="number" placeholder="Net Amount" readonly />
+        </div>
+      </section>
+
+      <!-- Sales Form -->
+      <section class="card">
+        <h2>Sales</h2>
+        <div class="form-grid">
+          <input type="text" placeholder="Sauda No" />
+          <input type="date" placeholder="Date" />
+          <input type="text" placeholder="Customer" />
+          <input type="text" placeholder="Description" />
+          <input type="number" placeholder="Bags" />
+          <input type="number" placeholder="LBS" />
+          <input type="number" placeholder="Rate" />
+          <input type="number" placeholder="Excluding" />
+          <input type="number" placeholder="Sales Tax" />
+          <input type="number" placeholder="Including" readonly />
+          <input type="number" placeholder="Net Amount" readonly />
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

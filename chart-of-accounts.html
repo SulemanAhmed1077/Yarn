@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chart of Accounts</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f7fa;
+        margin: 0;
+        padding: 0;
+      }
+
+      .dashboard-header {
+        background-color: #2c3e50;
+        color: #3498db;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .dashboard-header h1 {
+        margin: 0;
+      }
+
+      #logoutBtn {
+        background-color: #3498db;
+        border: none;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .dashboard-container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+        text-align: center;
+      }
+
+      .dashboard-container h2 {
+        margin-bottom: 30px;
+        color: #2c3e50;
+      }
+
+      .button-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+      }
+
+      .gl-button {
+        background-color: #5dade2;
+        border: none;
+        padding: 12px 25px;
+        color: white;
+        font-size: 16px;
+        border-radius: 7px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .gl-button:hover {
+        background-color: #3498db;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="dashboard-header">
+      <div></div>
+      <h1>Yarn Inventory System</h1>
+      <button id="logoutBtn">Logout</button>
+    </header>
+
+    <div class="dashboard-container">
+      <h2>Chart of Accounts</h2>
+      <div class="button-container">
+        <button class="gl-button">Assets</button>
+        <button class="gl-button">Liability</button>
+        <button class="gl-button">Revenue</button>
+        <button class="gl-button">Capital</button>
+        <button class="gl-button">Expanse</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

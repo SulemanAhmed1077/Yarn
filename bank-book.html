@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Book</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f7fa;
+        margin: 0;
+        padding: 0;
+      }
+
+      .dashboard-header {
+        background-color: #2c3e50;
+        color: #3498db;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .dashboard-header h1 {
+        margin: 0;
+      }
+
+      #logoutBtn {
+        background-color: #3498db;
+        border: none;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .dashboard-container {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      }
+
+      .dashboard-container h2 {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 20px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        text-align: center;
+        border: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #3498db;
+        color: white;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="dashboard-header">
+      <div></div>
+      <h1>Yarn Inventory System</h1>
+      <button id="logoutBtn">Logout</button>
+    </header>
+
+    <div class="dashboard-container">
+      <h2>Bank Book</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Voucher Number</th>
+            <th>Account Name</th>
+            <th>Description</th>
+            <th>Debit</th>
+            <th>Credit</th>
+            <th>Cheque No.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2025-04-23</td>
+            <td>VCH-001</td>
+            <td>Safeer Traders</td>
+            <td>Payment Received</td>
+            <td>0</td>
+            <td>15,000</td>
+            <td>123456</td>
+          </tr>
+          <tr>
+            <td>2025-04-22</td>
+            <td>VCH-002</td>
+            <td>Saleem Ltd.</td>
+            <td>Cheque Payment</td>
+            <td>10,000</td>
+            <td>0</td>
+            <td>654321</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
